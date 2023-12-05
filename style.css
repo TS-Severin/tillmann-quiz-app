@@ -28,6 +28,10 @@ main {
   align-items: center;
 }
 
+.card-section {
+  padding-bottom: 110px;
+}
+
 .card-container {
   display: flex;
   border-radius: var(--standard-border-radius);
@@ -78,9 +82,13 @@ main {
   background-color: var(--background-color-answer-button);
 }
 
+.tags {
+  flex-direction: row;
+}
+
 .tag-button {
   width: fit-content;
-  margin: 5px;
+  margin: 0 0 5px 5px;
   padding: 10px;
   background-color: var(--bookmark-color);
   border: none;
