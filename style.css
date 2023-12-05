@@ -14,7 +14,7 @@ header {
   z-index: 1;
   text-align: center;
   background-color: var(--background-color-header-footer);
-  font-family: var(--font-family-headlines);
+  font-family: var(--font-family-content);
 }
 
 header h1 {
