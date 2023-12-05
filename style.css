@@ -26,6 +26,7 @@ main {
   margin-top: 7rem;
   justify-content: center;
   align-items: center;
+  color: var(--background-color-main);
 }
 
 .card-section {
@@ -41,20 +42,38 @@ main {
   position: relative;
 }
 
-/* .bookmark {
+.question-card {
   display: flex;
-} */
+  flex-direction: column;
+}
+
+.bookmark {
+  display: flex;
+  position: relative;
+  width: 30%;
+  top: -5px;
+  left: 180px;
+}
+
+.question {
+  padding: 30px;
+  text-align: center;
+}
+
+.answer {
+  color: var(--background-color-main);
+}
+
+.answer-button {
+  margin: 50px;
+  padding: 10px;
+}
 
 .bookmark img {
   position: relative;
   top: -5px;
   left: 180px;
   width: 30%;
-}
-
-.question-card {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer {
