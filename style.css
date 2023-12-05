@@ -115,6 +115,29 @@ main {
   border-radius: var(--standard-border-radius);
 }
 
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: var(--standard-border-radius);
+  border: solid 1px;
+  width: 95%;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 10px 10px 10px var(--background-color-answer-button);
+  font-family: var(--font-family-content);
+  background-color: var(--background-color-main);
+  margin: 30px 5px 0 5px;
+}
+
+.name {
+  font-family: var(--font-family-headlines-nav);
+}
+
+.profilepic {
+  width: 100px;
+  border-radius: 100px;
+}
+
 footer img {
   width: 6%;
 }
