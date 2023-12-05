@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-body {
+body > * {
   width: 600px;
 }
 
@@ -24,15 +24,23 @@ header h1 {
   padding: 2rem;
 }
 
-footer {
+.footer {
   position: fixed;
   bottom: 0;
+}
+
+.navbar {
   display: flex;
   justify-content: space-around;
-  /* width: 100%; */
+  align-items: center;
   background-color: var(--background-color-header-footer);
   font-family: var(--font-family-headlines-nav);
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+footer img {
+  width: 20%;
 }
 
 a {
