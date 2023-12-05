@@ -41,13 +41,15 @@ main {
   position: relative;
 }
 
-.bookmark {
-  align-self: flex-end;
-  position: absolute;
-}
+/* .bookmark {
+  display: flex;
+} */
 
 .bookmark img {
-  width: 10%;
+  position: relative;
+  top: -5px;
+  left: 180px;
+  width: 30%;
 }
 
 .question-card {
