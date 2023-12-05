@@ -14,15 +14,51 @@ header {
   text-align: center;
   background-color: var(--background-color-header-footer);
   font-family: var(--font-family-headlines-nav);
+  border-radius: var(--standard-border-radius);
 }
 
 header h1 {
   padding: 2rem;
 }
 
+main {
+  display: flex;
+  margin-top: 7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-section {
+  display: flex;
+  border-radius: var(--standard-border-radius);
+  border-color: var(--border-color-card-link-hover);
+  border: solid 1px;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 10px var(--background-color-header-footer);
+  font-family: var(--font-family-content);
+  position: relative;
+}
+
+.bookmark {
+  align-self: flex-end;
+  position: absolute;
+}
+
+.bookmark img {
+  width: 10%;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
 }
 
 .navbar {
@@ -33,17 +69,9 @@ header h1 {
   font-family: var(--font-family-headlines-nav);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  border-radius: var(--standard-border-radius);
 }
 
 footer img {
   width: 20%;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color-main);
-}
-
-a:hover {
-  color: var(--border-color-card-link-hover);
 }
