@@ -4,4 +4,6 @@
   --background-color-header-footer: #66d7d1;
   --border-color-card: #fc7753;
   --bookmark-color: #dbd56e;
+  --font-family-headlines: "Courier New", Courier, monospace;
+  --font-family-content: Arial, Helvetica, sans-serif;
 }
