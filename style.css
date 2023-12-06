@@ -115,10 +115,14 @@ main {
   border-radius: var(--standard-border-radius);
 }
 
+/* styles for profile page */
+
 .profile-main {
   display: flex;
   flex-direction: column;
   margin-bottom: 110px;
+  width: 100%;
+  align-items: center;
 }
 
 .profile-container {
@@ -134,7 +138,7 @@ main {
   margin: 30px 5px 0 5px;
   flex-wrap: wrap;
   padding: 15px;
-  max-width: 95%;
+  width: 95%;
 }
 
 .name {
@@ -165,7 +169,7 @@ main {
   padding: 15px;
 }
 
-/* Switch */
+/* Togglebar => pasted in from W3-school */
 
 .switch {
   position: relative;
@@ -227,7 +231,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* footer */
+/* footer for all pages */
 
 footer img {
   width: 6%;
