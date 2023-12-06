@@ -122,14 +122,15 @@ main {
   padding: 15px;
 }
 
-.profile-container {
+.profile-header {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 30px;
 }
 
 .name {
   font-family: var(--font-family-headlines-nav);
-  width: 100%;
 }
 
 .profilepic {
@@ -142,18 +143,16 @@ main {
   line-height: 1.5rem;
 }
 
-.settings {
+.settings-container {
+  flex-direction: column;
+}
+
+.dark-mode {
   display: flex;
-  /* width: 1000px !important; */
-  /* flex-direction: row; */
-  border-radius: var(--standard-border-radius);
-  border: solid 1px;
-  align-items: space-between;
-  box-shadow: 10px 10px 10px var(--background-color-answer-button);
-  font-family: var(--font-family-content);
-  background-color: var(--background-color-main);
-  margin: 30px 5px 0 5px;
-  padding: 15px;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin: 5px;
 }
 
 /* Togglebar => pasted in from W3-school */
