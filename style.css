@@ -21,11 +21,12 @@ header h1 {
   padding: 2rem;
 }
 
+/* styles for question-page */
+
 main {
   display: flex;
   margin-top: 7rem;
   justify-content: center;
-  align-items: center;
 }
 
 .card-section {
@@ -98,23 +99,6 @@ main {
   width: 30%;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--background-color-header-footer);
-  font-family: var(--font-family-headlines-nav);
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-radius: var(--standard-border-radius);
-}
-
 /* styles for profile page */
 
 .profile-main {
@@ -122,12 +106,10 @@ main {
   flex-direction: column;
   margin-bottom: 110px;
   width: 100%;
-  align-items: center;
 }
 
 .profile-container {
   display: flex;
-  flex-direction: row;
   border-radius: var(--standard-border-radius);
   border: solid 1px;
   gap: 20px;
@@ -138,11 +120,16 @@ main {
   margin: 30px 5px 0 5px;
   flex-wrap: wrap;
   padding: 15px;
-  width: 95%;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .name {
   font-family: var(--font-family-headlines-nav);
+  width: 100%;
 }
 
 .profilepic {
@@ -157,11 +144,11 @@ main {
 
 .settings {
   display: flex;
-  width: 95%;
-  flex-direction: row;
+  /* width: 1000px !important; */
+  /* flex-direction: row; */
   border-radius: var(--standard-border-radius);
   border: solid 1px;
-  align-items: center;
+  align-items: space-between;
   box-shadow: 10px 10px 10px var(--background-color-answer-button);
   font-family: var(--font-family-content);
   background-color: var(--background-color-main);
@@ -232,6 +219,23 @@ input:checked + .slider:before {
 }
 
 /* footer for all pages */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--background-color-header-footer);
+  font-family: var(--font-family-headlines-nav);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: var(--standard-border-radius);
+}
 
 footer img {
   width: 6%;
