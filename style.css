@@ -245,3 +245,13 @@ footer a {
   padding: 0;
   display: contents;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-main: gray;
+    --text-color-main: black;
+    --background-color-header-footer: lightgray;
+    --background-color-answer-button: darkgrey;
+    --bookmark-color: gray;
+  }
+}
