@@ -24,7 +24,7 @@ header h1 {
 /* styles for question-page */
 
 main {
-  display: flex;
+  /* display: flex; */
   margin-top: 7rem;
   justify-content: center;
 }
@@ -111,6 +111,10 @@ main {
   flex-direction: column;
   margin-bottom: 110px;
   width: 100%;
+}
+
+.form-main {
+  margin-bottom: 110px;
 }
 
 .profile-container {

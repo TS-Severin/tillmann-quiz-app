@@ -5,25 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./js/form-js.js" defer></script>
+
     <title>Castle Quiz</title>
   </head>
   <body>
     <header>
       <h1>Castle Quiz</h1>
     </header>
-    <main>
+    <main data-js="main" class="form-main">
       <section class="profile-main">
         <div class="profile-container">
-          <form class="question-submit">
+          <form class="question-submit" data-js="question-submit">
             <label for="your-question">Your Question:</label>
-            <textarea name="your-question" id="your-question"></textarea>
+            <textarea name="yourquestion" id="your-question"></textarea>
             <label for="your-answer">Your Answer:</label>
-            <textarea name="your-answer" id="your-answer"></textarea>
+            <textarea name="youranswer" id="your-answer"></textarea>
             <label for="your-tag">Tag:</label>
 
-            <input type="text" name="your-tag" id="your-tag" />
+            <input type="text" name="yourtag" id="your-tag" />
             <div class="submit-button-container">
-              <input type="submit" value="Submit" class="submit-button" />
+              <button
+                type="submit"
+                class="submit-button"
+                data-js="submit-button"
+              >
+                Submit
+              </button>
             </div>
           </form>
         </div>
