@@ -260,3 +260,37 @@ footer a {
     --bookmark-color: gray;
   }
 }
+
+/* form-page */
+
+.question-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  display: block;
+  padding: 20px;
+}
+
+form > * {
+  margin: 15px 0 15px 0;
+  width: 100%;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  margin: 30px;
+  padding: 15px;
+  background-color: var(--background-color-header-footer);
+  border: none;
+  border-radius: var(--standard-border-radius);
+  font-weight: bold;
+  width: fit-content;
+}
+
+.submit-button:hover {
+  background-color: var(--background-color-answer-button);
+}
