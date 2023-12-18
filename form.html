@@ -18,12 +18,30 @@
         <div class="profile-container">
           <form class="question-submit" data-js="question-submit">
             <label for="your-question">Your Question:</label>
-            <textarea name="yourquestion" id="your-question"></textarea>
+            <textarea
+              name="yourquestion"
+              id="your-question"
+              maxlength="150"
+              data-js="questionarea"
+            ></textarea>
+            <p class="remaining-characters">
+              <span data-js="remaining-characters-question">150</span>
+              characters left
+            </p>
             <label for="your-answer">Your Answer:</label>
-            <textarea name="youranswer" id="your-answer"></textarea>
+            <textarea
+              name="youranswer"
+              id="your-answer"
+              maxlength="150"
+              data-js="answerarea"
+            ></textarea>
+            <p class="remaining-characters">
+              <span data-js="remaining-characters-answer">150</span>
+              characters left
+            </p>
             <label for="your-tag">Tag:</label>
 
-            <input type="text" name="yourtag" id="your-tag" />
+            <input type="text" name="yourtag" id="your-tag" maxlength="50" />
             <div class="submit-button-container">
               <button
                 type="submit"

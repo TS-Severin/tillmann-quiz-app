@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Castle%20Quiz_files/style.css">
+    <script src="Castle%20Quiz_files/form-js.js" defer="defer"></script>
+
+    <title>Castle Quiz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Castle Quiz</h1>
+    </header>
+    <main data-js="main" class="form-main">
+      <section class="profile-main">
+        <div class="profile-container">
+          <form class="question-submit" data-js="question-submit">
+            <label for="your-question">Your Question:</label>
+            <textarea name="yourquestion" id="your-question" maxlength="150" data-js="questionarea">asdfasdfasdf</textarea>
+            <p class="remaining-characters">
+              <span data-js="remaining-characters-question">150</span>
+              characters left
+            </p>
+            <label for="your-answer">Your Answer:</label>
+            <textarea name="youranswer" id="your-answer" maxlength="150" data-js="answerarea">asdfasdf</textarea>
+            <p class="remaining-characters">
+              <span data-js="remaining-characters-answer">150</span>
+              characters left
+            </p>
+            <label for="your-tag">Tag:</label>
+
+            <input type="text" name="yourtag" id="your-tag" maxlength="50">
+            <div class="submit-button-container">
+              <button type="submit" class="submit-button" data-js="submit-button">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="navbar">
+          <a href="http://127.0.0.1:5501/index.html"><img src="Castle%20Quiz_files/home.png" alt="home"></a>
+          <a href="http://127.0.0.1:5501/bookmarks.html"><img src="Castle%20Quiz_files/bookmark.png" alt="bookmarks"></a>
+          <a href="http://127.0.0.1:5501/form.html"><img src="Castle%20Quiz_files/plus_filled.png" alt="plus"></a>
+          <a href="http://127.0.0.1:5501/profile.html"><img src="Castle%20Quiz_files/profile_filled.png" alt="profile"></a>
+        </div>
+      </div>
+    </footer>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

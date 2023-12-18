@@ -6,27 +6,33 @@ const main = document.querySelector('[data-js="main"]');
 /* may character count */
 
 const MAX_CHARACTERS = 150;
+
 const form = document.querySelector('[data-js="form"]');
+const QuestionInput = document.querySelector('[data-js="questionarea"]');
 
-const questionInput = document.querySelector('[data-js="questionarea"]');
-const answerInput = document.querySelector('[data-js="answerarea"]');
-
-const characterLeftElementQuestion = document.querySelector(
+const characterLeftElement = document.querySelector(
   '[data-js="remaining-characters-question"]'
 );
-const characterLeftElementAnswer = document.querySelector(
-  '[data-js="remaining-characters-answer"]'
-);
 
-questionInput.addEventListener("input", (event) => {
-  characterLeftElementQuestion.textContent =
+console.log("characterLeftanswer: ", characterLeftElement);
+
+QuestionInput.addEventListener("input", (event) => {
+  characterLeftElement.textContent =
     MAX_CHARACTERS - parseInt(event.target.value.length);
 });
 
-answerInput.addEventListener("input", (event) => {
-  characterLeftElementAnswer.textContent =
-    MAX_CHARACTERS - parseInt(event.target.value.length);
-});
+// const messageInput = document.querySelector('[data-js="answerarea"]');
+
+// const characterLeftElement = document.querySelector(
+//   '[data-js="remaining-characters-answer"]'
+// );
+
+// console.log("characterLeftElement: ", characterLeftElement);
+
+// messageInput.addEventListener("input", (event) => {
+//   characterLeftElement.textContent =
+//     MAX_CHARACTERS - parseInt(event.target.value.length);
+// });
 
 /* new question card for input */
 

@@ -268,10 +268,11 @@ footer a {
 /* form-page */
 
 .question-submit {
+  display: flex;
   flex-direction: column;
+  align-items: left;
   display: block;
   padding: 20px;
-  width: 100%;
 }
 
 form > * {
