@@ -5,6 +5,23 @@
   padding: 0;
 }
 
+.dark-mode {
+  --background-color-main: gray;
+  --text-color-main: black;
+  --background-color-header-footer: lightgray;
+  --background-color-answer-button: darkgrey;
+  --bookmark-color: gray;
+  background-color: darkgrey;
+}
+
+.dark-mode-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin: 5px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -157,14 +174,6 @@ main {
   flex-direction: column;
 }
 
-.dark-mode {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 50px;
-  margin: 5px;
-}
-
 /* Togglebar => pasted in from W3-school */
 
 .switch {
@@ -205,7 +214,7 @@ main {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: black;
 }
 
 input:focus + .slider {
