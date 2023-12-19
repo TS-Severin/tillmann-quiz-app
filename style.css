@@ -82,6 +82,7 @@ main {
   padding: 0px 30px 30px 30px;
   color: var(--text-color-main);
   font-weight: bold;
+  text-shadow: var(--bookmark-color) 3px 3px 15px;
 }
 
 .hidden {
@@ -97,10 +98,12 @@ main {
   font-weight: bold;
   width: fit-content;
   align-self: center;
+  transition: box-shadow 80ms;
 }
 
 .answer-button:hover {
   background-color: var(--background-color-answer-button);
+  box-shadow: 5px 5px 10px 10px var(--bookmark-color);
 }
 
 .tag {
