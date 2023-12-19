@@ -85,4 +85,16 @@ questionSubmit.addEventListener("submit", (event) => {
       answerButton.innerText = "Show Answer";
     }
   });
+
+  /* bookmark toggle switch in new card */
+
+  const bookmarkImage = document.querySelector('[data-js="bookmark-image"');
+
+  bookmarkImage.addEventListener("click", function () {
+    if (bookmarkImage.src.endsWith("/resources/bookmark.png")) {
+      bookmarkImage.src = "./resources/bookmark_filled.png";
+    } else {
+      bookmarkImage.src = "./resources/bookmark.png";
+    }
+  });
 });
