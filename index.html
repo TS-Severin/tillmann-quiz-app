@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./js/index.js" defer></script>
     <title>Castle Quiz</title>
   </head>
   <body>
@@ -19,14 +20,17 @@
             class="bookmark"
             src="./resources/bookmark.png"
             alt="bookmark icon"
+            data-js="bookmark-image"
           />
 
           <p class="question">
             What is the name of the famous mystery novelist and main character
             in the TV show Castle?
           </p>
-          <p class="answer">Richard Castle</p>
-          <button class="answer-button">Show answer</button>
+          <button class="answer-button" data-js="answer-button">
+            Show Answer
+          </button>
+          <p class="answer" data-js="answer">Richard Castle</p>
           <div class="tag">
             <button class="tag-button">#maincharacter</button>
             <button class="tag-button">#novelist</button>
@@ -215,6 +219,9 @@
           /></a>
           <a href="./bookmarks.html"
             ><img src="./resources/bookmark.png" alt="bookmarks"
+          /></a>
+          <a href="./form.html"
+            ><img src="./resources/plus.png" alt="plus"
           /></a>
           <a href="./profile.html"
             ><img src="./resources/profile.png" alt="profile"

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/form-js.js" defer></script>
+
+    <title>Castle Quiz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Castle Quiz</h1>
+    </header>
+    <main data-js="main" class="form-main">
+      <section class="profile-main">
+        <div class="profile-container">
+          <form class="question-submit" data-js="question-submit">
+            <h3>Add your question to the Quiz <3</h3>
+            <label for="your-question"></label>
+            <textarea
+              name="yourquestion"
+              id="your-question"
+              maxlength="150"
+              data-js="questionarea"
+              placeholder="Enter your own question here ..."
+            ></textarea>
+            <p class="remaining-characters">
+              <span data-js="remaining-characters-question">150</span>
+              characters left
+            </p>
+            <label for="your-answer"></label>
+            <textarea
+              name="youranswer"
+              id="your-answer"
+              maxlength="150"
+              data-js="answerarea"
+              placeholder="Enter the answer to you question here ..."
+            ></textarea>
+            <p class="remaining-characters">
+              <span data-js="remaining-characters-answer">150</span>
+              characters left
+            </p>
+            <label for="your-tag"></label>
+
+            <input
+              type="text"
+              name="yourtag"
+              id="your-tag"
+              maxlength="50"
+              placeholder="Add a tag ..."
+            />
+            <div class="submit-button-container">
+              <button
+                type="submit"
+                class="submit-button"
+                data-js="submit-button"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="navbar">
+          <a href="./index.html"
+            ><img src="./resources/home.png" alt="home"
+          /></a>
+          <a href="./bookmarks.html"
+            ><img src="./resources/bookmark.png" alt="bookmarks"
+          /></a>
+          <a href="./form.html"
+            ><img src="./resources/plus_filled.png" alt="plus"
+          /></a>
+          <a href="./profile.html"
+            ><img src="./resources/profile_filled.png" alt="profile"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

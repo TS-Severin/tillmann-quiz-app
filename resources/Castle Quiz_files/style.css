@@ -5,23 +5,6 @@
   padding: 0;
 }
 
-.dark-mode {
-  --background-color-main: gray;
-  --text-color-main: black;
-  --background-color-header-footer: lightgray;
-  --background-color-answer-button: darkgrey;
-  --bookmark-color: gray;
-  background-color: darkgrey;
-}
-
-.dark-mode-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 50px;
-  margin: 5px;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -79,10 +62,8 @@ main {
 
 .answer {
   text-align: center;
-  padding: 0px 30px 30px 30px;
+  padding: 30px 30px 0 30px;
   color: var(--text-color-main);
-  font-weight: bold;
-  text-shadow: var(--bookmark-color) 3px 3px 15px;
 }
 
 .hidden {
@@ -98,12 +79,10 @@ main {
   font-weight: bold;
   width: fit-content;
   align-self: center;
-  transition: box-shadow 80ms;
 }
 
 .answer-button:hover {
   background-color: var(--background-color-answer-button);
-  box-shadow: 5px 5px 10px 10px var(--bookmark-color);
 }
 
 .tag {
@@ -177,6 +156,14 @@ main {
   flex-direction: column;
 }
 
+.dark-mode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin: 5px;
+}
+
 /* Togglebar => pasted in from W3-school */
 
 .switch {
@@ -217,7 +204,7 @@ main {
 }
 
 input:checked + .slider {
-  background-color: black;
+  background-color: #2196f3;
 }
 
 input:focus + .slider {
@@ -281,14 +268,15 @@ footer a {
 /* form-page */
 
 .question-submit {
+  display: flex;
   flex-direction: column;
+  align-items: left;
   display: block;
   padding: 20px;
-  width: 100%;
 }
 
 form > * {
-  margin: 15px 0 0px 0;
+  margin: 15px 0 15px 0;
   width: 100%;
 }
 
@@ -315,11 +303,4 @@ form > * {
   text-align: right;
   font-size: 0.8rem;
   color: grey;
-  margin: 0;
-  margin-bottom: 15px;
-  margin-top: 5px;
-}
-
-label {
-  font-style: italic;
 }

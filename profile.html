@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./js/darkmode.js" defer></script>
     <title>Castle Quiz</title>
   </head>
-  <body>
+  <body data-js="body">
     <header>
       <h1>Castle Quiz</h1>
     </header>
@@ -32,12 +33,20 @@
         <div class="profile-container">
           <div class="settings-container">
             <h3 class="name">Settings</h3>
-            <div class="dark-mode">
+            <div class="dark-mode-container">
               <h4>Dark mode</h4>
               <!-- Toggglebar pasted in from W3-School -->
               <label class="switch">
-                <input type="checkbox" />
-                <span class="slider round"></span>
+                <input
+                  type="checkbox"
+                  data-js="darkmode"
+                  name="darkmode"
+                  class="checkbox"
+                />
+                <span class="slider round" data-js="darkmode"></span>
+              </label>
+              <label class="switch">
+                <span class="checkbox"></span>
               </label>
             </div>
           </div>
@@ -49,10 +58,13 @@
       <div class="footer">
         <div class="navbar">
           <a href="./index.html"
-            ><img src="./resources/home_filled.png" alt="home"
+            ><img src="./resources/home.png" alt="home"
           /></a>
           <a href="./bookmarks.html"
             ><img src="./resources/bookmark.png" alt="bookmarks"
+          /></a>
+          <a href="./form.html"
+            ><img src="./resources/plus.png" alt="bookmarks"
           /></a>
           <a href="./profile.html"
             ><img src="./resources/profile_filled.png" alt="profile"
