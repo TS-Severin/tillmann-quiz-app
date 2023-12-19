@@ -97,4 +97,10 @@ questionSubmit.addEventListener("submit", (event) => {
       bookmarkImage.src = "./resources/bookmark.png";
     }
   });
+
+  event.target.reset(); // resets form after submitting
+
+  // reset character count
+  characterLeftElementQuestion.textContent = MAX_CHARACTERS;
+  characterLeftElementAnswer.textContent = MAX_CHARACTERS;
 });
