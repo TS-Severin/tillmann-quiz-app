@@ -3,7 +3,7 @@ console.clear();
 const questionSubmit = document.querySelector('[data-js="question-submit"]');
 const main = document.querySelector('[data-js="main"]');
 
-/* may character count */
+/* max character count */
 
 const MAX_CHARACTERS = 150;
 const form = document.querySelector('[data-js="form"]');

@@ -10,7 +10,7 @@ darkmode.addEventListener("change", (event) => {
 // const darkmode = document.querySelector('[data-js="darkmode"]');
 // const body = document.querySelector('[data-js="body"]');
 
-// darkmode.addEventListener("click", (event) => {
+// darkmode.addEventListener("change", (event) => {
 //   document.body.classList.add("dark-mode");
 //   console.log("works");
 // });
